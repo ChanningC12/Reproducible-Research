@@ -1,0 +1,31 @@
+---
+title: "Reproducible Research - Notes"
+author: "CC"
+date: "November 28, 2016"
+output: ioslides_presentation
+---
+
+## What is Reproducible Research About?
+
+- Course Focus: How do you develop the score for Data Analysis? To communicate what you have done, and get others to know how they can reproduce the work. Writing dynamic code and sharing data. 
+
+- Problem: No agreed upon platform/system for data analysis
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
