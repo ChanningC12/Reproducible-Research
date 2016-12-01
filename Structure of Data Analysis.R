@@ -57,8 +57,15 @@ unlist(perf.auc@y.values)
 perf.auc
 
 # Draw lift curve
+perf.lift = performance(pred,measure="lift",x.measure="rpp")
+plot(perf.lift,main="Lift Curve",lwd=3)
+perf.lift
 
-
+install.packages("lift")
+library(lift)
+plotLift(S,Y,cumulative = T, n.buckets = 10)
+plotLift(S,Y,cumulative = F, n.buckets = 10)
+TopDecileLift(S,Y)
 
 
 
