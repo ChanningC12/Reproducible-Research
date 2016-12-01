@@ -11,11 +11,75 @@ output: ioslides_presentation
 
 - Problem: No agreed upon platform/system for data analysis
 
-## Slide with Bullets
+## Concepts and Idea
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+- Reproducible Research: Make analytics data and code available so that others may reproduce findings
+- *What do we need?*
+- Analytics data are available
+- Analytics code are available
+- Documentation of code and data
+- Standard means of distribution
+
+## Script Everything
+
+- Write it down, make the work reproducible
+
+## Structure of Data Analysis
+
+- Defining a question (narrow down question to simplify the problem)
+- Determine what data you can access
+    - Free data on web
+    - Buy the data
+    - Respect the terms of use
+    - Generate it yourself
+- Obtain the data
+
+## Structure of Data Analysis (continued)
+
+- Clean the data
+- Exploratory data analysis
+    - summaries
+    - missing data
+    - exploratory plots
+    - exploratory analyses
+- Statistical prediction/modeling
+- Get a measure of uncertainty
+- Interpret results
+- Challenge results
+Synthesize/write-up results
+
+## Organize Your Analysis
+- Data analysis files
+    - Data
+        - Raw data
+        - Processed data
+    - Figures
+        - Exploratory figures
+        - Final figures
+    - R code
+        - Raw / unused scripts
+        - Final scripts
+        - R Markdown files
+    - Text
+        - README files
+        - Text of analysis / report
+
+## Organize Your Analysis (continued)
+- Raw data
+- Processed data
+- Exploratory figures
+- Raw scripts
+- Final scripts (clearly commented)
+- R markdown files
+- readme files (step-by-step instruction for analysis)
+- Text of document
+
+
+
+
+
+
+
 
 ## Slide with R Code and Output
 
