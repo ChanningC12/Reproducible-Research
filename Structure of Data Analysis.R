@@ -57,7 +57,7 @@ unlist(perf.auc@y.values)
 perf.auc
 
 # Draw lift curve
-perf.lift = performance(pred,measure="lift",x.measure="rpp")
+perf.lift = performance(pred,measure="lift",x.measure="rpp") # rate of positive predictions
 plot(perf.lift,main="Lift Curve",lwd=3)
 perf.lift
 
