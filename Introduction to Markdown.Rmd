@@ -1,0 +1,39 @@
+---
+title: "Introduction to Markdown"
+author: "CC"
+date: "December 3, 2016"
+output: ioslides_presentation
+---
+
+## Markdown
+"Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)"
+
+## Markdown Syntax
+- *Italics*
+- **Bold**
+
+1. first
+1. qifeng
+2. second
+3. third
+
+## Markdown Syntax
+- Links
+- [NBA](http://www.nba.com)
+
+I spend so much time reading [R bloggers][1] and [Simply Statistics][2]!  
+[1]: http://www.r-bloggers.com/ "R bloggers"  
+[2]: http://simplystatistics.org/ "Simply Statistics"
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+

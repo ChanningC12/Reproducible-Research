@@ -74,11 +74,13 @@ Synthesize/write-up results
 - readme files (step-by-step instruction for analysis)
 - Text of document
 
+## Coding Standard in R
+- Always write in text editor
+- Indent your code
+- Limit the width of the code (80 columns)
+- Limit the length of the function
 
-
-
-
-
+## R Markdown
 
 
 ## Slide with R Code and Output
