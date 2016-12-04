@@ -25,6 +25,31 @@ I spend so much time reading [R bloggers][1] and [Simply Statistics][2]!
 [1]: http://www.r-bloggers.com/ "R bloggers"  
 [2]: http://simplystatistics.org/ "Simply Statistics"
 
+## R Markdown
+- Allows one to create documents containing "live" R code
+- knitr package, markdown package, slidify package
+
+## R Markdown Demo
+```{r}
+library(datasets)
+data(airquality)
+summary(airquality)
+```
+
+## Let's first make a pairs of the data
+
+```{r}
+pairs(airquality)
+```
+
+## Here is a regression model of ozone on wind, solar radiation, and temperature
+
+```{r}
+library(stats)
+fit = lm(Ozone~Wind+Solar.R+Temp, data=airquality)
+summary(fit)
+```
+
 ## Slide with R Code and Output
 
 ```{r}

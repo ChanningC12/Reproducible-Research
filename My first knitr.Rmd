@@ -1,0 +1,51 @@
+My First knitr Document
+============================================================
+
+This is some text (i.e. a "text chunk")
+
+Here is a code chunk
+
+```{r}
+set.seed(1)
+x=rnorm(100)
+mean(x)
+```
+
+# Channing
+
+## Introduction
+
+This is some text, here is the code chunk
+```{r simulation, echo=FALSE}
+set.seed(1)
+x=rnorm(100)
+mean(x)
+```
+
+Let's first simulate some data
+```{r simulatedata.echo=T}
+x=rnorm(100)
+y=x+rnorm(100,sd=0.5)
+```
+
+Here is a scatterplot of the data
+```{r scatterplot, fig.height=4}
+par(mar=c(5,4,1,1),las=1)
+plot(x,y,main="My Simulated Data")
+```
+
+```{r fitmodel}
+fit = lm(Ozone~Wind+Temp+Solar.R,data=airquality)
+```
+
+Here is a table of regression coefficients
+```{r showtable,results="asis"}
+library(xtable)
+xt = xtable(summary(fit))
+print(xt,type="html")
+```
+  
+cache = T, first time run the documents, take a bit of time  
+second time running the document when nothing changes, since it has stored   
+in the disk, it won't redo the computation again
+
